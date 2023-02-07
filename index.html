@@ -10,8 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+
+    <title>Home work #7</title>
 </head>
 <body>
+    <!-- ==================HEADER=================== -->
     <header class="header-container">
         <div class="container container-nav"> 
         <nav class="nav-items">
@@ -27,12 +33,88 @@
             <li class="item"><a class="link" href="tel:+11(000)111-11-11">+11(000)111-11-11</a></li>
         </ul>
     </div>
+    <button type="button" class="mobile-menu-open js-open-menu">
+        <svg width="24" height="24">
+          <use href="./imаges/icons.svg#icon-Top-line"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu js-menu-container is-open">
+      <div class="container mobile-menu-container">
+        <button type="button" class="mobile-menu-close-btn js-close-menu">
+          <svg class="mobile-menu-close-icon" width="24" height="24">
+            <use href="./imаges/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link mobile-studio--active link">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="portfolio.html" class="mobile-menu-link link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link link">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="menu-number-mail-list list">
+          <li class="menu-number-mail-item">
+            <a href="tel:+11(000)111-11-11" class="menu-phone-link link">+11 (000) 111-11-11</a>
+          </li>
+          <li class="menu-number-mail-item">
+            <a href="mailto:info@devstudio.com" class="menu-mail-link link">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="menu-mobile-social-list list">
+          <li class="menu-mobile-social-item">
+            <a class="menu-mobile-social-link" href="#">
+              <svg class="menu-mobile-social-icon" width="24" height="24">
+                <use href="./imаges/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu-mobile-social-item">
+            <a class="menu-mobile-social-link" href="#">
+              <svg class="menu-mobile-social-icon" width="24" height="24">
+                <use href="./imаges/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu-mobile-social-item">
+            <a class="menu-mobile-social-link" href="#">
+              <svg class="menu-mobile-social-icon" width="24" height="24">
+                <use href="./imаges/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="menu-mobile-social-item">
+            <a class="menu-mobile-social-link" href="#">
+              <svg class="menu-mobile-social-icon" width="24" height="24">
+                <use href="./imаges/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     </header>
     <main class="main">
+         <!-- ==================HERO=================== -->
+
         <section class="main-section bg-hero">
             <h1 class="title">Effective Solutions for Your Business</h1>
             <button type="button" class="main-btn link" data-modal-open>Order Service</button>
         </section>
+
+        <!-- ==================ABOUT=================== -->
+
             <section class="section">
                 <div class="container">
                 <h2 class="visually-hidden">Skills</h2>
@@ -77,6 +159,9 @@
                     </ul>
                 </div>
             </section>
+              
+            <!-- ==================GALLERY-MAIN=================== -->
+
             <section class="section-photo">
                 <div class="container">
                 <h2 class="section-title">What are we doing</h2>
@@ -93,6 +178,9 @@
                     </ul>
                 </div>
             </section>
+             
+            <!-- ==================GALLERY-PERSON-MAIN=================== -->
+
         <section class="main-team section">
             <div class="container">
             <h2 class="section-title">Our Team</h2>
@@ -248,6 +336,9 @@
                 </ul>
             </div>
             </section>
+
+             <!-- =====================COMPANY-LOGO======================  -->
+
             <section class="customers">
                 <div class="container">
                       <h2 class="section-title">Customers</h2>
@@ -299,6 +390,7 @@
                 </div >
           </section>
     </main>
+    <!-- ==================FOOTER=================== -->
     <footer class="footer-page">
         <div class="footer-container container">
             <div class="fot-text">
@@ -358,6 +450,8 @@
     </div>
     </div >
 </footer>  
+<!-- ==================BACKDROP-MODAL===================  -->
+
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="button-close" data-modal-close>
@@ -434,6 +528,7 @@
             </form>
     </div>
 </div>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>

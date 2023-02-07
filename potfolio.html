@@ -9,8 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+
+    <title>Portfolio</title>
 </head>
 <body>
+    <!-- ==================HEADER=================== -->
     <header class="header-container">
         <div class="container container-nav">
             <nav class="nav-items">
@@ -25,9 +31,82 @@
                     <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
                     <li class="item"><a href="tel:+11(000)1111111" class="link">+11(000)111-11-11</a></li>
                 </ul>
+                <button type="button" class="mobile-menu-open js-open-menu">
+                    <svg width="24" height="24">
+                      <use href="./imаges/icons.svg#icon-Top-line"></use>
+                    </svg>
+                  </button>
             </div>
+            <!-- ================== MOBILE-MENU =================== -->
+
+      <div class="mobile-menu js-menu-container is-open">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="24" height="24">
+              <use href="./imаges/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a href="index.html" class="mobile-menu-link link">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link mobile-portfolio--active link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link link">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="menu-number-mail-list list">
+            <li class="menu-number-mail-item">
+              <a href="tel:+11(000)111-11-11" class="menu-phone-link link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="menu-number-mail-item">
+              <a href="mailto:info@devstudio.com" class="menu-mail-link link">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="menu-mobile-social-list list">
+            <li class="menu-mobile-social-item">
+              <a class="menu-mobile-social-link" href="#">
+                <svg class="menu-mobile-social-icon" width="24" height="24">
+                  <use href="./imаges/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-mobile-social-item">
+              <a class="menu-mobile-social-link" href="#">
+                <svg class="menu-mobile-social-icon" width="24" height="24">
+                  <use href="./imаges/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-mobile-social-item">
+              <a class="menu-mobile-social-link" href="#">
+                <svg class="menu-mobile-social-icon" width="24" height="24">
+                  <use href="./imаges/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-mobile-social-item">
+              <a class="menu-mobile-social-link" href="#">
+                <svg class="menu-mobile-social-icon" width="24" height="24">
+                  <use href="./imаges/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================== MOBILE-MENU =================== -->
     </header>
     <main class="hero">
+          <!-- ==================HERO=================== -->
         <section class="section-btn">
             <div class="container">
             <h1 class="visually-hidden">Portfolio Page</h1>
@@ -38,6 +117,7 @@
                     <li class="item"><button type="button" class="portfolio-buttons">Design</button></li>
                     <li class="item"><button type="button" class="portfolio-buttons">Marketing</button></li>
                 </ul>
+                 <!-- ==================PORTFOLIO=================== -->
             <ul class="list-img list">
                 <li class="item">
                     <a href="" class="img-links"> 
@@ -186,6 +266,7 @@
             </ul>
         </div>
     </main>
+    <!-- ==================FOOTER=================== -->
     <footer class="footer-page">
         <div class="footer-container container">
             <div class="fot-text">
@@ -244,5 +325,7 @@
       </form>
         </div>
     </footer>  
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 </html>
